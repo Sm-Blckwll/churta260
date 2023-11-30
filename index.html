@@ -69,58 +69,98 @@
                 <div class="projects-content-block">
                     <div class="projects-photo"></div>
                     <div class="projects-text">
-                        <h1>Fixing the Church roof</h1>
-                        <p>
-                            Our recent project involved the restoration of a historic church roof. The church, a symbol
-                            of the community's rich history and faith, had been weathered by time and elements. The
-                            roof, in particular, had suffered significant damage, with missing tiles and a weakened
-                            structure that threatened the integrity of the entire building.
-                        </p>
-                        <p>
-                            The restoration project was a delicate task. We aimed to preserve the original architecture
-                            while ensuring the roof's durability and longevity. Our team of skilled craftsmen used
-                            traditional methods in combination with modern materials to restore the roof to its former
-                            glory. The project was a success, with the church roof not only regaining its original charm
-                            but also ready to withstand the test of time.
-                        </p>
+                        <div class="text-wrapper">
+                            <h1>Fixing the Church roof</h1>
+                            <p>
+                                Our recent project involved the restoration of a historic church roof. The church, a
+                                symbol
+                                of the community's rich history and faith, had been weathered by time and elements. The
+                                roof, in particular, had suffered significant damage, with missing tiles and a weakened
+                                structure that threatened the integrity of the entire building.
+                            </p>
+
+                            <div class="moreText" style="display: none;">
+                                <p>
+                                    The restoration project was a delicate task. We aimed to preserve the original
+                                    architecture
+                                    while ensuring the roof's durability and longevity. Our team of skilled craftsmen
+                                    used
+                                    traditional methods in combination with modern materials to restore the roof to its
+                                    former
+                                    glory. The project was a success, with the church roof not only regaining its
+                                    original
+                                    charm
+                                    but also ready to withstand the test of time.
+                                </p>
+                            </div>
+                            <button class="showMoreButton">Show More...</button>
+                        </div>
                     </div>
                 </div>
                 <div class="projects-content-block">
                     <div class="projects-text">
-                        <h1>Restoration of the stonework</h1>
-                        <p>
-                            Another significant part of our restoration project was focused on the church's stonework.
-                            Over the years, the stone had weathered and eroded, losing much of its original detail and
-                            beauty. Our goal was to restore the stonework to its original state, preserving the church's
-                            historical and architectural value.
-                        </p>
-                        <p>
-                            Our team of experienced stonemasons undertook the task with great care and precision. They
-                            used a combination of traditional techniques and modern technology to meticulously restore
-                            each stone. The result was a stunning transformation that brought the church's intricate
-                            stonework back to life, enhancing the overall aesthetic of the building and ensuring its
-                            preservation for future generations.
-                        </p>
+                        <div class="text-wrapper">
+                            <h1>Restoration of the stonework</h1>
+                            <p>
+                                Another significant part of our restoration project was focused on the church's
+                                stonework.
+                                Over the years, the stone had weathered and eroded, losing much of its original detail
+                                and
+                                beauty. Our goal was to restore the stonework to its original state, preserving the
+                                church's
+                                historical and architectural value.
+                            </p>
+
+                            <div class="moreText" style="display: none;">
+                                <p>
+                                    Our team of experienced stonemasons undertook the task with great care and
+                                    precision.
+                                    They
+                                    used a combination of traditional techniques and modern technology to meticulously
+                                    restore
+                                    each stone. The result was a stunning transformation that brought the church's
+                                    intricate
+                                    stonework back to life, enhancing the overall aesthetic of the building and ensuring
+                                    its
+                                    preservation for future generations.
+                                </p>
+                            </div>
+                            <button class="showMoreButton">Show More...</button>
+                        </div>
                     </div>
                     <div class="projects-photo"></div>
                 </div>
                 <div class="projects-content-block">
                     <div class="projects-photo"></div>
                     <div class="projects-text">
-                        <h1>Renewal of the Church Doors</h1>
-                        <p>
-                            The church doors, serving as the gateway to this sacred place, were also a crucial part of
-                            our restoration project. Over centuries, these doors had become worn and weathered, losing
-                            their original grandeur. Our objective was to renew these doors while maintaining their
-                            historical significance.
-                        </p>
-                        <p>
-                            Our team of experts carefully refurbished the doors, paying close attention to the intricate
-                            carvings and details that make them unique. We used a blend of traditional craftsmanship and
-                            modern techniques to ensure the doors were restored to their original state, while also
-                            improving their durability. The renewed doors now stand as a testament to the church's rich
-                            history, welcoming parishioners and visitors alike with their renewed beauty.
-                        </p>
+                        <div class="text-wrapper">
+                            <h1>Renewal of the Church Doors</h1>
+                            <p>
+                                The church doors, serving as the gateway to this sacred place, were also a crucial part
+                                of
+                                our restoration project. Over centuries, these doors had become worn and weathered,
+                                losing
+                                their original grandeur. Our objective was to renew these doors while maintaining their
+                                historical significance.
+                            </p>
+
+                            <div class="moreText" style="display: none;">
+                                <p>
+                                    Our team of experts carefully refurbished the doors, paying close attention to the
+                                    intricate
+                                    carvings and details that make them unique. We used a blend of traditional
+                                    craftsmanship
+                                    and
+                                    modern techniques to ensure the doors were restored to their original state, while
+                                    also
+                                    improving their durability. The renewed doors now stand as a testament to the
+                                    church's
+                                    rich
+                                    history, welcoming parishioners and visitors alike with their renewed beauty.
+                                </p>
+                            </div>
+                            <button class="showMoreButton">Show More...</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,7 +271,21 @@
 
 
     <script>
-        // Add your JavaScript code here
+        var buttons = document.getElementsByClassName('showMoreButton');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                var moreText = this.previousElementSibling;
+                console.log('Button clicked');
+                console.log('More text:', moreText);
+                if (moreText.style.display === 'none') {
+                    moreText.style.display = 'block';
+                    this.textContent = 'Show Less...';
+                } else {
+                    moreText.style.display = 'none';
+                    this.textContent = 'Show More...';
+                }
+            });
+        }
     </script>
 </body>
 

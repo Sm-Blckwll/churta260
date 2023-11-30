@@ -50,6 +50,35 @@ body {
     color: #fff;
 }
 
+@media (max-width: 576px) {
+    .title-box h3 {
+        font-family: 'Spectral', serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 250px;
+        margin-left: 10%;
+    }
+    
+    .title-box h1 {
+        font-family: 'Spectral', serif;
+        font-size: 45px;
+        font-weight: 600;
+        margin: 0px;
+        margin-left: 10%;
+        color: #fff;
+    }
+    
+    .title-box p {
+        font-size: 15px;
+        font-weight: 500;
+        font-style: italic;
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 10%;
+        color: #fff;
+    }
+}
+
 .nav {
     display: flex;
     margin-top: 50px;
@@ -201,10 +230,47 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-self: center;
+    justify-content: flex-start;
     background-color: #fff;
     padding: 25px 50px;
     margin: 25px 0px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.showMoreButton {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-family: 'Spectral', serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .projects-content-block {
+        margin: 15px 25px;
+    }
+    .projects-content-title h1 {
+        font-size: 25px;
+    }
+
+    .projects-photo {
+        position: relative;
+        width: 600px;
+        height: 250px;
+    }
+
+    .projects-text {
+        padding: 15px;
+    }
 }
 
 .Events-content-title {
