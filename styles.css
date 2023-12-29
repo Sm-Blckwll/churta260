@@ -84,12 +84,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    overflow: hidden;
 }
 
 .nav-logo {
     width: 25px;
     margin-top: 10px;
     fill: rgb(255, 255, 255);
+    margin-left: 25px;
 }
 
 nav {
@@ -97,6 +99,7 @@ nav {
     max-height: 50px;
     width: 1500px;
     margin: auto;
+    overflow: hidden;
 }
 
 .nav-links {
@@ -392,9 +395,61 @@ ul {
     font-style: italic;
 }
 
+@media (max-width: 576px) {
+    .Events-content-block {
+        margin: 15px 25px;
+    }
 
+    .Events-content-title h1 {
+        font-size: 25px;
+    }
 
+    .Events-card {
+        height: 500px;
+        width: 300px;
+    }
 
+    .Events-card-photo {
+        width: 100%;
+        height: 200px;
+    }
+
+    .Events-card-title {
+        font-size: 20px;
+    }
+
+    .Events-card-text {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 900px) {
+    .Events-content-block {
+        margin: 15px 25px;
+    }
+
+    .Events-content-title h1 {
+        font-size: 25px;
+    }
+
+    .Events-card {
+        height: 500px;
+        width: 300px;
+    }
+
+    .Events-card-photo {
+        width: 100%;
+        height: 200px;
+    }
+
+    .Events-card-title {
+        font-size: 20px;
+    }
+
+    .Events-card-text {
+        height: fit-content;
+    }
+}
 
 .carousel {
     width: 90%;
@@ -442,6 +497,10 @@ ul {
 .custom-prev:active, .custom-next:active {
     background-color: #aaa;
     cursor: pointer;
+}
+
+.slick-track {
+    overflow: hidden!important;
 }
 
 #Contact {
