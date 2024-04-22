@@ -272,7 +272,6 @@ ul {
 
 .projects-photo {
     max-width: 650px;
-    min-width: 400px;
     min-height: 100px;
     overflow: hidden;
 }
@@ -332,7 +331,7 @@ ul {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .projects-content-block {
         margin: 15px 25px;
         flex-wrap: wrap;
