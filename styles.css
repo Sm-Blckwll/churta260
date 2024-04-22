@@ -272,6 +272,7 @@ ul {
 
 .projects-photo {
     max-width: 650px;
+    min-width: 400px;
     min-height: 100px;
     overflow: hidden;
 }
