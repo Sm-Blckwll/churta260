@@ -10,13 +10,15 @@ body {
 
 .title-box {
     position:relative;
+    overflow: hidden;
     top: 0;
-    height: 700px;
+    height: 650px;
+    padding-bottom: 50px;
     background-image: url(DJI_0194.JPG);
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 20%;
 }
 
 .title-box-text {
@@ -131,6 +133,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-top: 25px;
 }
 
@@ -154,13 +157,13 @@ ul {
     height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .about-text, .about-photo {
         flex: 1;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .about-content {
         flex-direction: column;
     }
@@ -334,12 +337,10 @@ ul {
 
     .projects-photo {
         position: relative;
-        width: 400px;
     }
 
     .projects-text {
         padding: 15px;
-        width: 400px;
         min-height: 350px;
     }
 }
@@ -490,7 +491,7 @@ ul {
 
 .custom-prev {
     left: 0;
-    margin-left: 75px;
+    margin-left: 5%;
 }
 
 .custom-next {
