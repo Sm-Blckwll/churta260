@@ -9,7 +9,7 @@ body {
 }
 
 .title-box {
-    position:relative;
+    position: relative;
     overflow: hidden;
     top: 0;
     height: 650px;
@@ -70,7 +70,7 @@ body {
         font-weight: 500;
         text-align: center;
     }
-    
+
     .title-box h1 {
         font-family: 'Spectral', serif;
         font-size: 45px;
@@ -79,7 +79,7 @@ body {
         text-align: center;
         color: #fff;
     }
-    
+
     .title-box p {
         font-size: 15px;
         font-weight: 500;
@@ -161,7 +161,9 @@ ul {
 }
 
 @media (min-width: 900px) {
-    .about-text, .about-photo {
+
+    .about-text,
+    .about-photo {
         flex: 1;
     }
 }
@@ -218,7 +220,7 @@ ul {
     color: #fff;
     border: none;
     cursor: pointer;
-    box-shadow: 0 5px 0 0 rgba(0,0,0,.06);
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, .06);
     transition: all 0.3s ease-in-out;
 }
 
@@ -226,6 +228,40 @@ ul {
     background-color: #444;
     scale: 1.02;
     box-shadow: 0 2px 0 0 rgb(255, 255, 255);
+}
+
+#Church {
+    position: relative;
+    padding: 20px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+    border: solid 1px transparent;
+}
+
+#Church::before {
+    content: "";
+    background-image: url(Photos/20240420_151234_0_1713779414998_1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.church-content-title {
+    text-align: center;
+    color: #fff;
+}
+
+.church-content-block {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
 }
 
 #my-canvas {
@@ -272,6 +308,7 @@ ul {
 
 .projects-photo {
     max-width: 650px;
+    aspect-ratio: 16/9;
     min-height: 100px;
     overflow: hidden;
 }
@@ -311,11 +348,33 @@ ul {
     cursor: pointer;
 }
 
+.moreProjectsButton {
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.moreProjectsButton:hover {
+    background-color: #444;
+    scale: 1.02;
+    box-shadow: 0 2px 0 0 rgb(255, 255, 255);
+}
+
 @media (max-width: 576px) {
     .projects-content-block {
         margin: 15px 25px;
-        
+
     }
+
     .projects-content-title h1 {
         font-size: 20px;
     }
@@ -336,6 +395,7 @@ ul {
         margin: 15px 25px;
         flex-wrap: wrap;
     }
+
     .projects-content-title h1 {
         font-size: 25px;
     }
@@ -491,7 +551,8 @@ ul {
     position: relative;
 }
 
-.custom-prev, .custom-next {
+.custom-prev,
+.custom-next {
     font-size: 0px;
     margin-top: 15px;
     width: 40px;
@@ -512,18 +573,20 @@ ul {
     margin-left: 13px;
 }
 
-.custom-prev:hover, .custom-next:hover {
+.custom-prev:hover,
+.custom-next:hover {
     background-color: #ddd;
     cursor: pointer;
 }
 
-.custom-prev:active, .custom-next:active {
+.custom-prev:active,
+.custom-next:active {
     background-color: #aaa;
     cursor: pointer;
 }
 
 .slick-track {
-    overflow: hidden!important;
+    overflow: hidden !important;
 }
 
 #Contact {
@@ -536,6 +599,7 @@ ul {
     text-align: center;
     color: #333;
 }
+
 .contact-content-block {
     margin: 0 auto;
     max-width: 800px;
