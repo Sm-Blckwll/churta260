@@ -43,6 +43,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
+
 }
 
 .title-box-text {
@@ -342,6 +343,7 @@ ul {
 .projects-photo {
     max-width: 650px;
     aspect-ratio: 16/9;
+    min-height: 100px;
     overflow: hidden;
 }
 
