@@ -341,8 +341,9 @@ ul {
 
 .projects-photo {
     max-width: 650px;
+    min-width: 600px;
     aspect-ratio: 16/9;
-    min-height: 100px;
+    min-height: 330px;
     overflow: hidden;
 }
 
