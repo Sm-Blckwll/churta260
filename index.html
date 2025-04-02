@@ -26,7 +26,7 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Events">Events</a></li>
-                <li class="float-right"><a href="#Donate">Donate</a></li>
+                <li class="float-right"><a style="cursor: pointer;" onclick="window.open('https://checkout.justgiving.com/c/3632702')">Donate</a></li>
             </ul>
         </nav>
     </section>
@@ -61,7 +61,8 @@
                 <p>
                     To make a donation, please click the button below. Thank you for your support.
                 </p>
-                <button onclick="location.href='#'">Donate Now</button>
+                <button onclick="window.open('https://checkout.justgiving.com/c/3632702')">Donate Now</button>
+                <a style="color:black;" href="Photos/FriendsMembershipApplicationForm.docx">download form</a>
             </div>
             <img src="Photos/left.png" class="left-image" alt="Floating image">
             <img src="Photos/right.png" class="right-image" alt="Floating image">
@@ -102,7 +103,8 @@
                     </p>
                 </div>
                 <div class="about-photo">
-                    <img src="Photos/20240420_151254_0_1713779417936.jpg" alt="About us">
+                    <img id="photoContainer" src="Photos/20240420_151254_0_1713779417936.jpg" alt="About us">
+                    <div id="progress-bar"></div>
                 </div>
             </div>
         </section>
@@ -132,7 +134,7 @@
                     <h1>Recent projects</h1>
                 </div>
                 <div class="projects-content-block">
-                    <div class="projects-photo"><img src="Photos/20240420_151322_0_1713779421875.jpg" alt="Organ"></div>
+                    <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 06 19 PM.jpg" alt="Organ"></div>
                     <div class="projects-text">
                         <div class="text-wrapper">
                             <h1>Refurbishment of the organ</h1>
@@ -143,14 +145,14 @@
                                 honouring its rich history.
                             </p>
 
-                            <div class="moreText" style="display: none;">
+                            
                                 <p>
                                     The project is also introducing eight new organ stops, each carefully selected
                                     to enhance the instrument's versatility and musical expression. The majestic
                                     sound of the organ now fills the church once again.
                                 </p>
-                            </div>
-                            <button class="showMoreButton">Read More...</button>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -164,7 +166,7 @@
                                 stonework.
                             </p>
 
-                            <div class="moreText" style="display: none;">
+                            
                                 <p>
                                     The repairs to the West door and stonework not only safeguarded the physical
                                     foundation of our church but also upheld its symbolic importance within the
@@ -174,11 +176,10 @@
                                     In undertaking these and other repairs, we reaffirm our commitment to
                                     stewardship and preserving the church for future generations.
                                 </p>
-                            </div>
-                            <button class="showMoreButton">Read More...</button>
+                            
                         </div>
                     </div>
-                    <div class="projects-photo"><img src="Photos/20240420_151054_0_1713779412662.jpg" alt="Stonework">
+                    <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 39 18 PM.jpg" alt="Stonework">
                     </div>
                 </div>
                 <div class="projects-content-block">
@@ -197,7 +198,7 @@
 
                 <div class="moreProjects" style="display: none;">
                     <div class="projects-content-block">
-                        <div class="projects-photo"><img src="Photos/ringing.jpg" alt="carpets">
+                        <div class="projects-photo"><img src="Photos/Photo 29-9-2024, 5 37 54 PM.jpg" alt="carpets">
                         </div>
                         <div class="projects-text">
                             <div class="text-wrapper">
@@ -225,7 +226,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projects-photo"><img src="Photos/20240420_151710_0_1713779441102.jpg"
+                        <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 21 18 PM.jpg"
                                 alt="Stonework">
                         </div>
                     </div>
@@ -266,8 +267,8 @@
                     <div class="carousel">
                         <div class="Events-card">
                             <!--<div class="Events-card-photo"></div>-->
-                            <div class="Events-card-date">Date of Month 24</div>
-                            <div class="Events-card-title">Name of Event</div>
+                            <div class="Events-card-date">TBD 25</div>
+                            <div class="Events-card-title">Meeting</div>
                             <div class="Events-card-text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat ultrices nibh, sed congue sem sodales vel. Fusce quis mi arcu. Pellentesque nec ante vestibulum, tincidunt lorem eu, eleifend odio. 
@@ -277,11 +278,11 @@
                                 </p>
                             </div>
                             <div class="Events-card-label">
-                                <p>Party</p>
+                                <p>Meeting</p>
                             </div>
                         </div>
-                        <div class="Events-card">
-                            <!--<div class="Events-card-photo"></div>-->
+                        <!--<div class="Events-card">
+                            
                             <div class="Events-card-date">Date of Month 24</div>
                             <div class="Events-card-title">Name of Event</div>
                             <div class="Events-card-text">
@@ -294,7 +295,7 @@
                             </div>
                         </div>
                         <div class="Events-card">
-                            <!--<div class="Events-card-photo"></div>-->
+                            
                             <div class="Events-card-date">Date of Month 24</div>
                             <div class="Events-card-title">Name of Event</div>
                             <div class="Events-card-text">
@@ -307,7 +308,7 @@
                             </div>
                         </div>
                         <div class="Events-card">
-                            <!--<div class="Events-card-photo"></div>-->
+                            
                             <div class="Events-card-date">Date of Month 24</div>
                             <div class="Events-card-title">Name of Event</div>
                             <div class="Events-card-text">
@@ -320,7 +321,7 @@
                             </div>
                         </div>
                         <div class="Events-card">
-                            <!--<div class="Events-card-photo"></div>-->
+                            <div class="Events-card-photo"></div>
                             <div class="Events-card-date">Date of Month 24</div>
                             <div class="Events-card-title">Name of Event</div>
                             <div class="Events-card-text">
@@ -331,7 +332,7 @@
                             <div class="Events-card-label">
                                 <p>Party</p>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <button class="custom-prev"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"
                             viewBox="0 0 24 24">
@@ -371,7 +372,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 The Friends of St. Nectan's. All rights reserved.</p>
+            <p>© 2025 The Friends of St. Nectan's. All rights reserved.</p>
             <p>Designed by Edistone Design and Tanya Godunok.</p>
         </div>
     </footer>
@@ -457,6 +458,49 @@
                 }
             });
         }
+
+        $(document).ready(function () {
+            // Array of image URLs
+            var images = [];
+var photos = [
+    'Photos/20240420_151254_0_1713779417936.jpg',
+    'Photos/Photo 29-9-2024, 6 07 19 PM.jpg',
+    'Photos/Photo 29-9-2024, 7 07 43 PM.jpg',
+    'Photos/Photo 29-9-2024, 6 01 53 PM.jpg'
+];
+photos.forEach(function(photo) {
+    var img = new Image();
+    img.src = photo;
+    images.push(img);
+});
+
+
+            // Current photo index
+            var currentIndex = 1;
+
+            // Time for the progress bar to complete (equal to intervalTime)
+            var intervalTime = 4000;
+
+            // Function to switch the photo
+            function switchPhoto() {
+                $('#photoContainer').attr('src', photos[currentIndex]);
+                currentIndex = (currentIndex + 1) % photos.length;
+            }
+
+            // Function to animate the progress bar
+            function startProgressBar() {
+                $('#progress-bar').stop().css({ width: '0%' }).animate({ width: '100%' }, intervalTime, 'linear');
+            }
+
+            // Change the image and animate the progress bar every 5 seconds
+            setInterval(function () {
+                switchPhoto();
+                startProgressBar();
+            }, intervalTime);
+
+            // Initialize the progress bar on page load
+            startProgressBar();
+        });
 
 
     </script>

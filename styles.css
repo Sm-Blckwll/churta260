@@ -207,15 +207,31 @@ ul {
 }
 
 .about-photo {
+    position: relative;
     margin: 25px;
     flex: 1 0 100%;
     min-width: 100px;
     min-height: 100px;
+    
 }
 
 .about-photo img {
     max-width: 100%;
     height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#progress-bar {
+    width: 0%;
+    border-top: solid 5px #564f7c;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
 }
 
 @media (min-width: 900px) {
@@ -357,19 +373,24 @@ ul {
 }
 
 .projects-photo {
-    max-width: 650px;
-    aspect-ratio: 16/9;
+    max-width: 500px;
+    
     min-height: 100px;
     overflow: hidden;
 }
 
 .projects-photo img {
+    aspect-ratio: 4/3;
     width: 100%;
+    height: auto;
     margin: auto;
+    
+    object-fit: cover;
 }
 
 .projects-text {
     width: 600px;
+    height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
