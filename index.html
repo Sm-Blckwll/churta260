@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Friends of St. Nectan's Stoke</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -18,15 +20,13 @@
 
             <ul class="nav-links">
                 <li><a href="#Home">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="nav-logo" viewBox="0 0 448 512">
-                            <path
-                                d="M400 192h-54v-46c0-6.6-5.4-12-12-12h-58v-46c0-6.6-5.4-12-12-12h-46v46h-58c-6.6 0-12 5.4-12 12v46h-54c-6.6 0-12 5.4-12 12v46h54v58c0 6.6 5.4 12 12 12h46v46c0 6.6 5.4 12 12 12h58v-46h58c6.6 0 12-5.4 12-12v-58h54c6.6 0 12-5.4 12-12v-46zm-192 58v-58h58v58h-58z" />
-                        </svg>
+                        <img src="/150x150-ico.png" class="nav-logo" alt="logo">
                     </a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Events">Events</a></li>
-                <li class="float-right"><a style="cursor: pointer;" onclick="window.open('https://checkout.justgiving.com/c/3632702')">Donate</a></li>
+                <li class="float-right"><a style="cursor: pointer;"
+                        onclick="window.open('https://checkout.justgiving.com/c/3632702')">Donate</a></li>
             </ul>
         </nav>
     </section>
@@ -34,6 +34,7 @@
         <header>
             <div class="title-box">
                 <div class="title-box-text">
+                    <img src="/500x500-ico.png" class="logo" alt="">
                     <h3>The Friends of</h3>
                     <h1>St. Nectan's</h1>
                     <h2>Stoke</h2>
@@ -61,8 +62,11 @@
                 <p>
                     To make a donation, please click the button below. Thank you for your support.
                 </p>
+                <div class="donate-button-wrapper">
                 <button onclick="window.open('https://checkout.justgiving.com/c/3632702')">Donate Now</button>
-                <a style="color:black;" href="Photos/FriendsMembershipApplicationForm.docx">download form</a>
+                <button class="friend-alt" onclick="window.open('Photos/FriendsMembershipApplicationForm.docx')">Become a Friend</button>
+                <!-- <a style="color:black;" href="Photos/FriendsMembershipApplicationForm.docx">download form</a> -->
+                 </div>
             </div>
             <img src="Photos/left.png" class="left-image" alt="Floating image">
             <img src="Photos/right.png" class="right-image" alt="Floating image">
@@ -115,17 +119,17 @@
             </div>
             <div class="church-content-block">
                 <p>
-                        On high ground in a remote corner of Northwest Devon stands the large, imposing Church of St.
-                        Nectan's, Stoke. It is the Parish Church of Hartland and is sometimes called "the Cathedral of
-                        North Devon" with its high tower (128 feet / 39 metres), which is the tallest in North Devon and
-                        for
-                        centuries has served as a landmark for sailors in the Bristol Channel. The present building is
-                        believed to be the third or fourth on this site although parts of it date back to the fourteenth
-                        century. Christian worship has taken place here for almost a thousand years.
-                    
+                    On high ground in a remote corner of Northwest Devon stands the large, imposing Church of St.
+                    Nectan's, Stoke. It is the Parish Church of Hartland and is sometimes called "the Cathedral of
+                    North Devon" with its high tower (128 feet / 39 metres), which is the tallest in North Devon and
+                    for
+                    centuries has served as a landmark for sailors in the Bristol Channel. The present building is
+                    believed to be the third or fourth on this site although parts of it date back to the fourteenth
+                    century. Christian worship has taken place here for almost a thousand years.
+
                 </p>
             </div>
-            
+
         </section>
 
         <section id="Projects">
@@ -133,6 +137,24 @@
                 <div class="projects-content-title">
                     <h1>Recent projects</h1>
                 </div>
+                <div class="projects-content-block">
+                    <div class="projects-text">
+                        <div class="text-wrapper">
+                            <h1>External repairs</h1>
+                            <p>
+                                The latest project to which we are making a substantial contribution, made possible by a very welcome legacy, is one of the largest. As a result of the Quinquennial Inspection, the urgent need for repairs to the external walls of our ancient church was identified. This major project has started and will be ongoing for some time. Only when the walls are once again weatherproof, can repairs to the interior be tackled.
+                            </p>
+
+
+                            <p>
+                                As you can imagine, the cost of doing this is astronomical, so major fundraising is required!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects-photo"><img src="Photos/43967A42-D3EB-4CBA-AD70-A9B8B9D02623.jpeg" alt="External repairs">
+                    </div>
+                </div>
+                
                 <div class="projects-content-block">
                     <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 06 19 PM.jpg" alt="Organ"></div>
                     <div class="projects-text">
@@ -145,14 +167,14 @@
                                 honouring its rich history.
                             </p>
 
-                            
-                                <p>
-                                    The project is also introducing eight new organ stops, each carefully selected
-                                    to enhance the instrument's versatility and musical expression. The majestic
-                                    sound of the organ now fills the church once again.
-                                </p>
-                            
-                            
+
+                            <p>
+                                The project is also introducing eight new organ stops, each carefully selected
+                                to enhance the instrument's versatility and musical expression. The majestic
+                                sound of the organ now fills the church once again.
+                            </p>
+
+
                         </div>
                     </div>
                 </div>
@@ -166,17 +188,17 @@
                                 stonework.
                             </p>
 
-                            
-                                <p>
-                                    The repairs to the West door and stonework not only safeguarded the physical
-                                    foundation of our church but also upheld its symbolic importance within the
-                                    community, honouring the craftsmanship of past generations.
-                                </p>
-                                <p>
-                                    In undertaking these and other repairs, we reaffirm our commitment to
-                                    stewardship and preserving the church for future generations.
-                                </p>
-                            
+
+                            <p>
+                                The repairs to the West door and stonework not only safeguarded the physical
+                                foundation of our church but also upheld its symbolic importance within the
+                                community, honouring the craftsmanship of past generations.
+                            </p>
+                            <p>
+                                In undertaking these and other repairs, we reaffirm our commitment to
+                                stewardship and preserving the church for future generations.
+                            </p>
+
                         </div>
                     </div>
                     <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 39 18 PM.jpg" alt="Stonework">
@@ -189,7 +211,9 @@
                         <div class="text-wrapper">
                             <h1>Renewal of the carpets</h1>
                             <p>
-                                In a recent project the worn carpet in the chancel was replaced and the altar cloth and pulpit fall were repaired and cleaned. The new carpet, the altar cloth, and pulpit fall are now in pristine condition. The church looks so much brighter and more welcoming.
+                                In a recent project the worn carpet in the chancel was replaced and the altar cloth and
+                                pulpit fall were repaired and cleaned. The new carpet, the altar cloth, and pulpit fall
+                                are now in pristine condition. The church looks so much brighter and more welcoming.
                             </p>
                         </div>
                     </div>
@@ -207,9 +231,7 @@
                                     We are very fortunate to have an excellent team of ringers, both experienced
                                     and apprentices. The condition of the ringing room had deteriorated over the
                                     years and was in urgent need of care and attention and the worn bell ropes
-                                    needed replacing. Friends of St Nectan were delighted to be able to fund all of
-                                    this through a legacy . As you can see from the photograph, our wonderful bell
-                                    ringers are very appreciative.
+                                    needed replacing. Friends of St Nectan were delighted to be able to fund all of this through a legacy. As you can see from the photograph, our wonderful bell ringers are very appreciative.
                                 </p>
                             </div>
                         </div>
@@ -226,8 +248,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 21 18 PM.jpg"
-                                alt="Stonework">
+                        <div class="projects-photo"><img src="Photos/Photo 24-9-2024, 6 21 18 PM.jpg" alt="Stonework">
                         </div>
                     </div>
                     <div class="projects-content-block">
@@ -237,7 +258,7 @@
                             <div class="text-wrapper">
                                 <h1>Bell repairs</h1>
                                 <p>
-                                    In 2005 the bells needed repairing and this was the first major project to be funded by the Friends. 
+                                    In 2005 the bells needed repairing and this was the first major project to be funded by the Friends. In addition to this, the Ringing Room has been refurbished and new bell ropes purchased, which are now in use.
                                 </p>
                             </div>
                         </div>
@@ -246,7 +267,7 @@
                 <button class="moreProjectsButton">Show More Projects</button>
                 <img src="Photos/mid.png" class="mid-image" alt="Floating image">
             </div>
-            
+
         </section>
 
         <section id="Since">
@@ -254,7 +275,27 @@
                 <h1>Since 2005 donations, subscriptions and legacies have enabled us to fund:</h1>
             </div>
             <div class="since-content-block">
-                <p>Bell repairs</p><p>Lighting Improvements  </p><p>Redecorations</p><p>Repairs to West Door</p><p>Repairs to all doors</p><p>Installation of sound system</p><p>Extension of sound system</p><p>Repairs to lightning conductor</p><p>New carpets</p><p>Repairs to arch over West Door</p><p>Replastering South Porch ceiling</p><p>Decoration & repairs to organ site</p><p>Replacement latches S&W doors</p><p>Repairs to stone boundary wall</p><p>External tower repairs</p><p>Pope’s Chamber gate & handrail</p><p>Handrail to South Path</p><p>Replacement boiler</p><p>Organ repairs</p><p>Bell Ringing room refurbished</p><p>Bell ropes replacement</p>
+                <p>Bell repairs</p>
+                <p>Lighting Improvements </p>
+                <p>Redecorations</p>
+                <p>Repairs to West Door</p>
+                <p>Repairs to all doors</p>
+                <p>Installation of sound system</p>
+                <p>Extension of sound system</p>
+                <p>Repairs to lightning conductor</p>
+                <p>New carpets</p>
+                <p>Repairs to arch over West Door</p>
+                <p>Replastering South Porch ceiling</p>
+                <p>Decoration & repairs to organ site</p>
+                <p>Replacement latches S&W doors</p>
+                <p>Repairs to stone boundary wall</p>
+                <p>External tower repairs</p>
+                <p>Pope’s Chamber gate & handrail</p>
+                <p>Handrail to South Path</p>
+                <p>Replacement boiler</p>
+                <p>Organ repairs</p>
+                <p>Bell Ringing room refurbished</p>
+                <p>Bell ropes replacement</p>
             </div>
         </section>
 
@@ -267,18 +308,37 @@
                     <div class="carousel">
                         <div class="Events-card">
                             <!--<div class="Events-card-photo"></div>-->
-                            <div class="Events-card-date">TBD 25</div>
-                            <div class="Events-card-title">Meeting</div>
+                            <div class="Events-card-date">21<sup>st</sup> of June 2025</div>
+                            <div class="Events-card-title">Annual General Meeting</div>
                             <div class="Events-card-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat ultrices nibh, sed congue sem sodales vel. Fusce quis mi arcu. Pellentesque nec ante vestibulum, tincidunt lorem eu, eleifend odio. 
+                                    The AGM is to be held in the Church Rooms, Hartland, at 12 noon on the
+                                    21<sup>st</sup>. The meeting will be followed by a light buffet. All are welcome!
                                 </p>
                                 <p>
-                                    More text if needed here!
+                                    <a href="https://w3w.co/cornfield.bells.count " target="_blank">Map Directions →</a>
                                 </p>
                             </div>
                             <div class="Events-card-label">
                                 <p>Meeting</p>
+                            </div>
+                        </div>
+                        <div class="Events-card">
+                            <!--<div class="Events-card-photo"></div>-->
+                            <div class="Events-card-date">2<sup>nd</sup> of August 2025</div>
+                            <div class="Events-card-title">Church Open Day</div>
+                            <div class="Events-card-text">
+                                <p>
+                                    We are having an Open Day at the Church on Saturday, August 2<sup>nd</sup>, from 11
+                                    a.m. to 3 p.m. Come along and explore the rich history of our beautiful church.
+                                </p>
+                                <p>
+                                    <a href="https://w3w.co/appealing.butterfly.mulled" target="_blank">Map Directions
+                                        →</a>
+                                </p>
+                            </div>
+                            <div class="Events-card-label">
+                                <p>Open Day</p>
                             </div>
                         </div>
                         <!--<div class="Events-card">
@@ -462,17 +522,17 @@
         $(document).ready(function () {
             // Array of image URLs
             var images = [];
-var photos = [
-    'Photos/20240420_151254_0_1713779417936.jpg',
-    'Photos/Photo 29-9-2024, 6 07 19 PM.jpg',
-    'Photos/Photo 29-9-2024, 7 07 43 PM.jpg',
-    'Photos/Photo 29-9-2024, 6 01 53 PM.jpg'
-];
-photos.forEach(function(photo) {
-    var img = new Image();
-    img.src = photo;
-    images.push(img);
-});
+            var photos = [
+                'Photos/20240420_151254_0_1713779417936.jpg',
+                'Photos/Photo 29-9-2024, 6 07 19 PM.jpg',
+                'Photos/Photo 29-9-2024, 7 07 43 PM.jpg',
+                'Photos/Photo 29-9-2024, 6 01 53 PM.jpg'
+            ];
+            photos.forEach(function (photo) {
+                var img = new Image();
+                img.src = photo;
+                images.push(img);
+            });
 
 
             // Current photo index

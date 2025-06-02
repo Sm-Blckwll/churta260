@@ -18,7 +18,7 @@ body {
     max-height: 300px;
     pointer-events: none;
     z-index: 1;
-    
+
 }
 
 .right-image {
@@ -54,6 +54,14 @@ body {
     background-size: cover;
     background-position: 20%;
     border-bottom: solid 5px #564f7c;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    filter: brightness(0) invert(1);
+    
 }
 
 .title-box-text {
@@ -70,7 +78,7 @@ body {
     text-align: center;
     margin-bottom: 0px;
     margin-top: 0px;
-    padding-top: 150px;
+    padding-top: 50px;
     line-height: 12px;
     color: #fff;
 }
@@ -157,6 +165,7 @@ body {
     margin-top: 10px;
     fill: rgb(255, 255, 255);
     margin-left: 25px;
+    filter: brightness(0) invert(1);
 }
 
 nav {
@@ -190,6 +199,8 @@ ul {
     margin-right: 25px;
 }
 
+
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -212,14 +223,14 @@ ul {
     flex: 1 0 100%;
     min-width: 100px;
     min-height: 100px;
-    
+
 }
 
 .about-photo img {
     max-width: 100%;
     height: auto;
-    aspect-ratio: 4/3!important;
-    object-fit: cover!important;
+    aspect-ratio: 4/3;
+    object-fit: cover;
     margin: 0;
     padding: 0;
 }
@@ -278,6 +289,14 @@ ul {
     z-index: 3;
 }
 
+.donate-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 40px auto;
+}
+
 #Donate:hover {
     background-color: #ffffff;
     border-color: #564f7c;
@@ -290,7 +309,7 @@ ul {
     display: block;
     width: 200px;
     height: 50px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     background-color: #564f7c;
     color: #fff;
     border: none;
@@ -299,11 +318,27 @@ ul {
     transition: all 0.3s ease-in-out;
 }
 
+
+
 .donate-content-block button:hover {
-    background-color: #958cc9;
-    scale: 1.02;
-    box-shadow: 0 2px 0 0 rgb(255, 255, 255);
+    background-color: #958cc9 ;
+    scale: 1.02 ;
+    box-shadow: 0 2px 0 0 rgb(255, 255, 255) ;
 }
+
+.friend-alt {
+    background-color: #ffffff !important;
+    color: #564f7c !important;
+    border: 2px solid #564f7c !important;
+
+    &:hover {
+        background-color: #958cc9 !important;
+    color: #fff !important;
+    border: 2px solid #958cc9 !important;
+    }
+}
+
+
 
 #Church {
     position: relative;
@@ -374,7 +409,7 @@ ul {
 
 .projects-photo {
     max-width: 500px;
-    
+
     min-height: 100px;
     overflow: hidden;
 }
@@ -384,7 +419,7 @@ ul {
     width: 100%;
     height: auto;
     margin: auto;
-    
+
     object-fit: cover;
 }
 
@@ -462,7 +497,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 .since-content-block p {
@@ -753,4 +788,3 @@ footer {
     overflow: hidden;
     font-size: 12px;
 }
-
