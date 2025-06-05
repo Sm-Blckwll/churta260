@@ -346,7 +346,7 @@ ul {
 
 #Church {
     position: relative;
-    /* padding: 20px; */
+    
     margin-top: 50px;
     transition: all 0.3s ease-in-out;
     border: solid 1px transparent;
