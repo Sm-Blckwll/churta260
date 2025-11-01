@@ -65,7 +65,7 @@ body {
 .logo {
     width: 100px;
     filter: brightness(0) invert(1);
-    
+
 }
 
 .title-box-text {
@@ -325,9 +325,9 @@ ul {
 
 
 .donate-content-block button:hover {
-    background-color: #958cc9 ;
-    scale: 1.02 ;
-    box-shadow: 0 2px 0 0 rgb(255, 255, 255) ;
+    background-color: #958cc9;
+    scale: 1.02;
+    box-shadow: 0 2px 0 0 rgb(255, 255, 255);
 }
 
 .friend-alt {
@@ -337,8 +337,8 @@ ul {
 
     &:hover {
         background-color: #958cc9 !important;
-    color: #fff !important;
-    border: 2px solid #958cc9 !important;
+        color: #fff !important;
+        border: 2px solid #958cc9 !important;
     }
 }
 
@@ -346,7 +346,7 @@ ul {
 
 #Church {
     position: relative;
-    
+
     margin-top: 50px;
     transition: all 0.3s ease-in-out;
     border: solid 1px transparent;
@@ -598,8 +598,17 @@ ul {
 .Events-card-photo {
     width: 100%;
     height: 300px;
-    background-color: #ddd;
+    background-color: #564f7c;
     margin-bottom: 15px;
+}
+
+.Events-card-photo img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+    object-fit: cover;
 }
 
 .Events-card-title {
@@ -737,6 +746,48 @@ ul {
 
 .slick-track {
     overflow: hidden !important;
+}
+
+#SpecialThanksBoard {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.thanks-board-title {
+    text-align: center;
+    color: #564f7c;
+}
+
+.thanks-board-content {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.thanks-board-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 25px;
+}
+
+.thanks-main {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.thanks-board-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.thanks-board-link img {
+    height: 20px;
+    margin-right: 10px;
 }
 
 #Contact {
